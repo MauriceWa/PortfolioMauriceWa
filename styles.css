@@ -1,9 +1,9 @@
 :root {
     --text-color: #fdfdfd;
-    --main-bg-color: #fff;
+    --main-bg-color: #a9353f;
     --nav-bg-color: #222;
-    --top-text-bg-color: #333;
-    --button-bg-color: #d9534f;
+    --top-text-bg-color: #8a010b;
+    --button-bg-color: #fdfdfd;
     --button-bg-hover-color: #c9302c;
     --footer-bg-color: #aa353f;
     --box-shadow-color: rgba(0,0,0,0.2);
@@ -42,9 +42,15 @@ body {
     display: inline;
     margin-right: 20px;
 }
-
-.main-navigation a.nav-item,
 .touch {
+    text-decoration: none;
+    color: black;
+    font-weight: 1000;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.main-navigation a.nav-item
+{
     text-decoration: none;
     color: var(--text-color);
     font-weight: 600;

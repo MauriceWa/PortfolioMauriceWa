@@ -1,7 +1,7 @@
 :root {
     --text-color: #fdfdfd;
     --main-bg-color: #a9353f;
-    --nav-bg-color: #222;
+    --nav-bg-color: #000;
     --top-text-bg-color: #8a010b;
     --button-bg-color: #fdfdfd;
     --button-bg-hover-color: #c9302c;
@@ -42,12 +42,7 @@ body {
     display: inline;
     margin-right: 20px;
 }
-.touch {
-    text-decoration: none;
-    color: black;
-    font-weight: 1000;
-    transition: background-color 0.3s ease-in-out;
-}
+
 
 .main-navigation a.nav-item
 {
@@ -90,6 +85,11 @@ h1, p, footer {
     cursor: pointer;
     box-shadow: 0 2px 5px var(--box-shadow-color);
     border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
 }
 
 footer {
@@ -97,6 +97,9 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+
+
+
 
 @keyframes fadeIn {
     from { opacity: 0; }

@@ -169,6 +169,7 @@ footer {
     right: 27%;
 }
 
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -188,9 +189,7 @@ footer {
         margin: 10px 0;
     }
 
-    .main-title {
-        font-size: 2rem;
-    }
+
 
     .touch {
         width: auto;
@@ -198,14 +197,25 @@ footer {
     }
 
 
-    .main-navigation ul li {
-        display: block;
-        margin: 10px 0;
-    }
 
     .main-title {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
+    .description,
+    h1, p, footer {
+        font-size: 0.7rem;
+        margin-bottom: 1rem;
+    }
+
+    .top-text {
+        /*background-size: contain;*/
+        background-position: top center;
+        padding: 40px 0;
+        text-align: center;
+        width: 100%;
+        min-height: 9em;
+    }
+
 
     .background-container {
         position: relative;
@@ -222,8 +232,83 @@ footer {
          }
 
     .image-link:nth-child(1) {
+        top: -0.1%;
+        left: 19%;
+    }
+
+    .image-link:nth-child(2) {
+        top: -1%;
+        left: 46%;
+        transform: translateX(-50%);
+    }
+
+    .image-link:nth-child(3) {
+        top: 4%;
+        right: 24%;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+
+    .main-navigation ul {
+        text-align: center;
+    }
+
+    .main-navigation ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+
+
+    .touch {
+        width: auto;
+        padding: 15px;
+    }
+
+
+
+    .main-title {
+        font-size: 1.5rem;
+    }
+    .description,
+    h1, p, footer {
+        font-size: 0.7rem;
+        margin-bottom: 1rem;
+    }
+
+    .top-text {
+        background-size: contain;
+        background-position: top center;
+        padding: 40px 0;
+        text-align: center;
+        width: 100%;
+        min-height: 9em;
+    }
+
+
+    .background-container {
+        position: relative;
+        width: 100%;
+        height: 9em;
+        background-image: url('Resources/lowerb.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .image-link {
+        width: 15%;
+    }
+
+    .image-link:nth-child(1) {
         top: 18%;
-        left: 5%;
+        left: 15%;
     }
 
     .image-link:nth-child(2) {
@@ -234,32 +319,7 @@ footer {
 
     .image-link:nth-child(3) {
         top: 20%;
-        right: 13%;
+        right: 21%;
     }
 
-
-}
-
-@media (max-width: 480px) {
-    .main-title {
-        font-size: 1.5rem;
-    }
-
-    .touch {
-        padding: 10px;
-    }
-    .image-link {
-        width: 20%;
-    }
-
-    .main-title {
-        font-size: 1.5rem;
-    }
-
-    .touch {
-        padding: 10px;
-    }
-    .image-link {
-        top: 30%;
-    }
 }

@@ -27,10 +27,26 @@
     <div class="container">
         <h1 class="main-title">Enhancing Humanity Through Technology</h1>
         <p class="description">Lorem ipsum dolor sit amet...</p>
-        <a href="" class="touch"> GET IN TOUCH</a>
+        <button onclick="document.getElementById('contactModel').style.display='block'" class="touch">GET IN TOUCH</button>
+        <div id="contactModel" class="model">
+            <div class="model-content">
+                <span onclick="document.getElementById('contactModel').style.display='none'" class="close">&times;</span>
+                <form action="https://formspree.io/f/{your-id}" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="_replyto" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit" class="touch">Send Message</button>
+                </form>
+            </div>
+        </div>
 
     </div>
 </section>
+
+
 
 <section class="images">
     <div class="background-container">

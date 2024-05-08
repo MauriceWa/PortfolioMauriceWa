@@ -12,10 +12,10 @@ const phrases = [
 
 const bioKeywords = [
     "boxer.",
-    "Fitness enthusiast.",
-    "coach.",
     "hard worker.",
-    "."
+    "coach.",
+    "Fitness enthusiast.",
+    "Software Developer."
 ];
 
 let currentPhrase = 0;
@@ -26,6 +26,7 @@ let currentBioCharacter = 0;
 let typeText = document.getElementById('typeText');
 let bioText = document.getElementById('bioText');
 let cursor = document.querySelector('.cursor');
+let bioTypingStarted = false;
 
 function type() {
     if (currentCharacter < phrases[currentPhrase].length) {
@@ -54,7 +55,9 @@ function typeBio() {
         currentBioCharacter++;
         setTimeout(typeBio, 80);
     } else {
-        setTimeout(eraseBio, 2000);
+        if (currentBioKeyword < bioKeywords.length - 1) {
+            setTimeout(eraseBio, 2000);
+        }
     }
 }
 
@@ -64,13 +67,20 @@ function eraseBio() {
         currentBioCharacter--;
         setTimeout(eraseBio, 100);
     } else {
-        currentBioKeyword = (currentBioKeyword + 1) % bioKeywords.length;
+        currentBioKeyword++;
+        currentBioCharacter = 0;
         setTimeout(typeBio, 200);
     }
 }
 
+function startBioTyping() {
+    if (!bioTypingStarted) {
+        bioTypingStarted = true;
+        typeBio();
+    }
+}
+
 setTimeout(type, 200);
-setTimeout(typeBio, 200);
 
 function openBio() { document.getElementById('bio').style.display = 'block'; }
 function closeBio() { document.getElementById('bio').style.display = 'none'; }

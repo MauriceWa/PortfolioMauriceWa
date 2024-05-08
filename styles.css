@@ -22,6 +22,7 @@ body {
     background-color: var(--main-bg-color);
 }
 
+
 .model {
     display: none;
     position: fixed;
@@ -42,6 +43,39 @@ body {
     border: 1px solid #888;
     width: 80%;
 }
+
+
+.bio-container {
+    position: relative;
+}
+
+.bio-box {
+
+    display: none;
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200%;
+    padding: 0px;
+    background-color: #ffffff;
+    color: #000;
+    border: 1px solid #888;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    z-index: 1;
+}
+
+.bio-box p {
+    font-size: 1rem;
+}
+
+.bio-container:hover .bio-box {
+    display: block;
+}
+
 
 .close {
     color: #aaa;
@@ -176,6 +210,11 @@ footer {
 .cursor {
     font-weight: bold;
     color: #fdfdfd;
+    animation: blink 1s infinite step-start;
+}
+.cursor2 {
+    font-weight: bold;
+    color: #000000;
     animation: blink 1s infinite step-start;
 }
 @keyframes blink {

@@ -8,12 +8,23 @@ const phrases = [
     "Building Smarter Solutions for Complex Problems.",
     "Advancing Human Potential with AI.",
     "Crafting the Future of Digital Solutions."
+];
 
+const bioKeywords = [
+    "boxer.",
+    "Fitness enthusiast.",
+    "coach.",
+    "hard worker.",
+    "."
 ];
 
 let currentPhrase = 0;
 let currentCharacter = 0;
+let currentBioKeyword = 0;
+let currentBioCharacter = 0;
+
 let typeText = document.getElementById('typeText');
+let bioText = document.getElementById('bioText');
 let cursor = document.querySelector('.cursor');
 
 function type() {
@@ -37,4 +48,29 @@ function erase() {
     }
 }
 
+function typeBio() {
+    if (currentBioCharacter < bioKeywords[currentBioKeyword].length) {
+        bioText.textContent += bioKeywords[currentBioKeyword].charAt(currentBioCharacter);
+        currentBioCharacter++;
+        setTimeout(typeBio, 80);
+    } else {
+        setTimeout(eraseBio, 2000);
+    }
+}
+
+function eraseBio() {
+    if (currentBioCharacter > 0) {
+        bioText.textContent = bioKeywords[currentBioKeyword].substring(0, currentBioCharacter - 1);
+        currentBioCharacter--;
+        setTimeout(eraseBio, 100);
+    } else {
+        currentBioKeyword = (currentBioKeyword + 1) % bioKeywords.length;
+        setTimeout(typeBio, 200);
+    }
+}
+
 setTimeout(type, 200);
+setTimeout(typeBio, 200);
+
+function openBio() { document.getElementById('bio').style.display = 'block'; }
+function closeBio() { document.getElementById('bio').style.display = 'none'; }

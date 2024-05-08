@@ -11,9 +11,9 @@ const phrases = [
 ];
 
 const bioKeywords = [
-    "boxer.",
-    "hard worker.",
-    "coach.",
+    "Boxer.",
+    "Hard Worker.",
+    "Coach.",
     "Fitness enthusiast.",
     "Software Developer."
 ];

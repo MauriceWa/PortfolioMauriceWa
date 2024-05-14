@@ -1,30 +1,54 @@
+:root {
+    --text-color: #fdfdfd;
+    --main-bg-color: #a9353f;
+    --nav-bg-color: #000;
+    --top-text-bg-color: #8a010b;
+    --button-bg-color: #fdfdfd;
+    --button-bg-hover-color: #c9302c;
+    --footer-bg-color: #aa353f;
+    --box-shadow-color: rgba(0,0,0,0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--main-bg-color);
+}
+
 .background-container {
     position: relative;
     width: 100%;
     height: 50vh;
-    background-image: url('../Resources/lower2.png'); /* Update with the correct path */
+    background-image: url('../Resources/lower2.png');
     background-size: cover;
     background-position: center;
 }
 
 .image-link {
     position: absolute;
-    width: 10%;
-    height: 10%; /* Adjust height as needed */
-    background: transparent;
+    width: 15%;
+    height: 32%;
+    background: black;
     cursor: pointer;
     border: none;
 }
 
-/* Adjust the positions of the buttons */
+
 #button1 {
     top: 22%;
-    left: 22%;
+    left: 18%;
 }
 
 #button2 {
     top: 22%;
-    left: 50%;
+    left: 48%;
     transform: translateX(-50%);
 }
 
@@ -33,38 +57,62 @@
     right: 22%;
 }
 
+footer {
+    background: var(--footer-bg-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
 @media (max-width: 1000px) {
     #button1 {
-        top: 30%;
-        left: 20%;
+        top: 18%;
+        left: 19%;
     }
 
     #button2 {
-        top: 30%;
-        left: 50%;
+        top: 18%;
+        left: 48%;
         transform: translateX(-50%);
     }
 
     #button3 {
-        top: 30%;
-        right: 20%;
+        top: 18%;
+        right: 22%;
     }
 }
 
 @media (max-width: 600px) {
     #button1 {
-        top: 40%;
-        left: 15%;
+        top: 23%;
+        left: 19%;
     }
 
     #button2 {
-        top: 40%;
-        left: 50%;
+        top: 23%;
+        left: 48%;
         transform: translateX(-50%);
     }
 
     #button3 {
-        top: 40%;
-        right: 15%;
+        top: 23%;
+        right: 23%;
     }
 }
+    @media (max-width: 468px) {
+        #button1 {
+            top: 23%;
+            left: 5%;
+        }
+
+        #button2 {
+            top: 23%;
+            left: 45%;
+            transform: translateX(-50%);
+        }
+
+        #button3 {
+            top: 23%;
+            right: 12%;
+        }
+    }
+

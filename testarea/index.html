@@ -4,68 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Maurice - Full Stack Developer</title>
 </head>
-
 <body>
 
-<nav class="main-navigation">
-    <ul>
-        <li><a target="_blank" class="nav-item">Maurice</a></li>
-        <li><a target="_blank" class="nav-item">BNF</a></li>
-        <li><a target="_blank" class="nav-item">MauriceWa</a></li>
-    </ul>
-</nav>
 
-<section class="top-text">
-    <div class="container">
-        <h1 class="main-title" id="typeText">Enhancing Humanity Through Technology</h1><span class="cursor">|</span>
-        <p class="description">
-            Please get in touch to get access to contact
-            information. For security reasons they are unavailable here.
-        </p>
-        <button onclick="document.getElementById('contactModel').style.display='block'" class="touch">GET IN TOUCH</button>
-        <div id="contactModel" class="model">
-            <div class="model-content">
-                <span onclick="document.getElementById('contactModel').style.display='none'" class="close">&times;</span>
-                <form action="https://formspree.io/f/mleqzkyo" method="POST">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="_replyto" required>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                    <button type="submit" class="touch">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </div>
+<section class="container">
+    <img src="../Resources/upper.png">
+    <h1>
+        Hallo gasten
+    </h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias, aliquid doloremque excepturi expedita illo sunt? Aliquid animi eos et exercitationem explicabo, facere fugiat, impedit nulla repellat temporibus veritatis voluptatibus.
+    </p>
+    <button>GET IN TOUCH</button>
+
+
 </section>
-
-<section class="images">
-    <div class="background-container">
-        <a href="../Resources/blanco%20gegevens.pdf" target="_blank" class="image-link"><img src="../Resources/cv.png" alt="CV"></a>
-        <div class="image-link bio-container" onmouseover="startBioTyping()">
-            <div class="bio-box">
-                <h2>Bio</h2>
-                <p>I am a <span id="bioText"></span><span class="cursor">|</span></p>
-            </div>
-            <img src="../Resources/github.png" alt="GitHub">
-        </div>
-        <a href="https://www.instagram.com/mauricewaai/" target="_blank" class="image-link"><img src="../Resources/instagram.png" alt="Instagram"></a>
-    </div>
-</section>
-
-<footer>
-    <div class="container">
-        © 2024 Maurice. All rights reserved
-    </div>
-</footer>
-
-<script src="scripts.js"></script>
-
 </body>
 </html>

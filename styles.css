@@ -22,7 +22,6 @@ body {
     background-color: var(--main-bg-color);
 }
 
-
 .model {
     display: none;
     position: fixed;
@@ -44,13 +43,11 @@ body {
     width: 80%;
 }
 
-
 .bio-container {
     position: relative;
 }
 
 .bio-box {
-
     display: none;
     position: absolute;
     bottom: 120%;
@@ -64,7 +61,6 @@ body {
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-
     z-index: 1;
 }
 
@@ -75,7 +71,6 @@ body {
 .bio-container:hover .bio-box {
     display: block;
 }
-
 
 .close {
     color: #aaa;
@@ -207,16 +202,29 @@ footer {
     right: 27%;
 }
 
+.invisible-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
 .cursor {
     font-weight: bold;
     color: #fdfdfd;
     animation: blink 1s infinite step-start;
 }
+
 .cursor2 {
     font-weight: bold;
     color: #000000;
     animation: blink 1s infinite step-start;
 }
+
 @keyframes blink {
     50% {
         opacity: 0;
@@ -227,6 +235,7 @@ footer {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
 @media (max-width: 1580px) {
     .image-link:nth-child(1) {
         top: 22%;
@@ -277,18 +286,15 @@ footer {
         margin: 10px 0;
     }
 
-
-
     .touch {
         width: auto;
         padding: 15px;
     }
 
-
-
     .main-title {
         font-size: 1.5rem;
     }
+
     .description,
     h1, p, footer {
         font-size: 0.7rem;
@@ -296,14 +302,12 @@ footer {
     }
 
     .top-text {
-        /*background-size: contain;*/
         background-position: top center;
         padding: 40px 0;
         text-align: center;
         width: 100%;
         min-height: 9em;
     }
-
 
     .background-container {
         position: relative;
@@ -334,9 +338,8 @@ footer {
         top: 12%;
         right: 24%;
     }
-
-
 }
+
 @media (max-width: 850px) {
     .container {
         width: 95%;
@@ -351,18 +354,15 @@ footer {
         margin: 10px 0;
     }
 
-
-
     .touch {
         width: auto;
         padding: 15px;
     }
 
-
-
     .main-title {
         font-size: 1.5rem;
     }
+
     .description,
     h1, p, footer {
         font-size: 0.7rem;
@@ -370,14 +370,12 @@ footer {
     }
 
     .top-text {
-        /*background-size: contain;*/
         background-position: top center;
         padding: 40px 0;
         text-align: center;
         width: 100%;
         min-height: 9em;
     }
-
 
     .background-container {
         position: relative;
@@ -390,8 +388,8 @@ footer {
     }
 
     .image-link {
-             width: 15%;
-         }
+        width: 15%;
+    }
 
     .image-link:nth-child(1) {
         top: -0.1%;
@@ -408,8 +406,6 @@ footer {
         top: 4%;
         right: 24%;
     }
-
-
 }
 
 @media (max-width: 480px) {
@@ -426,18 +422,15 @@ footer {
         margin: 10px 0;
     }
 
-
-
     .touch {
         width: auto;
         padding: 15px;
     }
 
-
-
     .main-title {
         font-size: 1.5rem;
     }
+
     .description,
     h1, p, footer {
         font-size: 0.7rem;
@@ -452,7 +445,6 @@ footer {
         width: 100%;
         min-height: 9em;
     }
-
 
     .background-container {
         position: relative;
@@ -483,5 +475,4 @@ footer {
         top: 20%;
         right: 21%;
     }
-
 }

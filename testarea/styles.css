@@ -1,26 +1,70 @@
-body{
-    margin: 0;
-}
-
-.container{
-
-/*    background-image: url("../Resources/upper.png");*/
-/*    background-size: cover;*/
-/*    background-repeat: no-repeat;*/
-/*    background-position: center;*/
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-/*!*        align-items: space-evenly;*!*/
-}
-
-.container img{
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-image: url('../Resources/lower2.png'); /* Update with the correct path */
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
 }
-.background-container{
 
+.image-link {
+    position: absolute;
+    width: 10%;
+    height: 10%; /* Adjust height as needed */
+    background: transparent;
+    cursor: pointer;
+    border: none;
 }
 
+/* Adjust the positions of the buttons */
+#button1 {
+    top: 22%;
+    left: 22%;
+}
+
+#button2 {
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#button3 {
+    top: 22%;
+    right: 22%;
+}
+
+@media (max-width: 1000px) {
+    #button1 {
+        top: 30%;
+        left: 20%;
+    }
+
+    #button2 {
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #button3 {
+        top: 30%;
+        right: 20%;
+    }
+}
+
+@media (max-width: 600px) {
+    #button1 {
+        top: 40%;
+        left: 15%;
+    }
+
+    #button2 {
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #button3 {
+        top: 40%;
+        right: 15%;
+    }
+}

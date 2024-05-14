@@ -9,21 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Maurice - Full Stack Developer</title>
 </head>
-
 <body>
-
 <nav class="main-navigation">
     <ul>
         <li><a target="_blank" class="nav-item">Maurice</a></li>
         <li><a target="_blank" class="nav-item">BNF</a></li>
         <li><a target="_blank" class="nav-item">MauriceWa</a></li>
-        <!--        <li><a href="Resources/blanco%20gegevens.pdf" target="_blank" class="nav-item">CV</a></li>-->
-<!--        <li><a href="https://github.com/" target="_blank" class="nav-item">GitHub</a></li>-->
-<!--        <li><a href="https://www.instagram.com/" target="_blank" class="nav-item">Instagram</a></li>-->
     </ul>
 </nav>
-
-
 
 <section class="top-text">
     <div class="container">
@@ -47,33 +40,35 @@
                 </form>
             </div>
         </div>
-
     </div>
 </section>
 
-
-
 <section class="images">
     <div class="background-container">
-        <a href="Resources/blanco.pdf"  target="_blank" class="image-link"><img src="Resources/cv.png" alt="CV"></a>
-        <div class="image-link bio-container" onmouseover="startBioTyping()">
+        <a href="Resources/blanco.pdf"  target="_blank" class="image-link" style="top: 22%; left: 22%;">
+            <img src="Resources/cv.png" alt="CV">
+            <button class="invisible-button"></button>
+        </a>
+        <div class="image-link bio-container" style="top: 18%; left: 43%;" onmouseover="startBioTyping()">
             <div class="bio-box">
                 <h2>Bio</h2>
                 <p>I am a <span id="bioText"></span><span class="cursor2">|</span></p>
             </div>
             <img src="Resources/github.png" alt="GitHub">
+            <button class="invisible-button"></button>
         </div>
-        <a href="https://www.instagram.com/mauricewaai/" target="_blank" class="image-link"><img src="Resources/instagram.png" alt="Instagram"></a>
+        <a href="https://www.instagram.com/mauricewaai/" target="_blank" class="image-link" style="top: 22%; right: 27%;">
+            <img src="Resources/instagram.png" alt="Instagram">
+            <button class="invisible-button"></button>
+        </a>
     </div>
 </section>
-
 
 <footer>
     <div class="container">
         © 2024 Maurice. All rights reserved
     </div>
 </footer>
-
 
 <script src="scripts.js"></script>
 

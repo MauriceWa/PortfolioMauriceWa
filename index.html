@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Maurice - Full Stack Developer</title>
 </head>
 <body>
+
 <nav class="main-navigation">
     <ul>
         <li><a target="_blank" class="nav-item">Maurice</a></li>
@@ -18,8 +16,8 @@
     </ul>
 </nav>
 
-<section class="top-text">
-    <div class="container">
+<section class="upper-container">
+    <div>
         <h1 class="main-title" id="typeText"></h1><span class="cursor">|</span>
         <p class="description">
             Please get in touch to get access to private
@@ -43,26 +41,17 @@
     </div>
 </section>
 
-<section class="images">
-    <div class="background-container">
-        <a href="Resources/Blank.pdf" target="_blank" class="image-link" style="top: 22%; left: 22%;">
-            <img src="Resources/cv.png" alt="CV">
-            <button class="invisible-button"></button>
-        </a>
-        <div class="image-link bio-container" style="top: 18%; left: 43%;" onmouseover="startBioTyping()">
-            <div class="bio-box">
-                <h2>Bio</h2>
-                <p>I am a <span id="bioText"></span><span class="cursor2">|</span></p>
-            </div>
-            <img src="Resources/github.png" alt="GitHub">
-            <button class="invisible-button"></button>
+<div class="background-container">
+    <a href="../Resources/Blank.pdf" target="_blank" class="image-link" id="button1"></a>
+    <div class="image-link bio-container" id="button2" onmouseover="startBioTyping()">
+        <div class="bio-box">
+            <h2>Bio</h2>
+            <p>I am a <span id="bioText"></span><span class="cursor2">|</span></p>
         </div>
-        <a href="https://www.instagram.com/mauricewaai/" target="_blank" class="image-link" style="top: 22%; right: 27%;">
-            <img src="Resources/instagram.png" alt="Instagram">
-            <button class="invisible-button"></button>
-        </a>
+
     </div>
-</section>
+    <a href="https://www.instagram.com/mauricewaai/" target="_blank" class="image-link" id="button3"></a>
+</div>
 
 <footer>
     <div class="container">
@@ -71,6 +60,5 @@
 </footer>
 
 <script src="scripts.js"></script>
-
 </body>
 </html>

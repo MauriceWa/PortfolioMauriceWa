@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (currentBioCharacter < bioKeywords[currentBioKeyword].length) {
             bioText.textContent += bioKeywords[currentBioKeyword].charAt(currentBioCharacter);
             currentBioCharacter++;
-            setTimeout(typeBio, 80);
+            setTimeout(typeBio, 30);
         } else {
             if (currentBioKeyword < bioKeywords.length - 1) {
                 setTimeout(eraseBio, 2000);
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (currentBioCharacter > 0) {
             bioText.textContent = bioKeywords[currentBioKeyword].substring(0, currentBioCharacter - 1);
             currentBioCharacter--;
-            setTimeout(eraseBio, 100);
+            setTimeout(eraseBio, 50);
         } else {
             currentBioKeyword++;
             currentBioCharacter = 0;

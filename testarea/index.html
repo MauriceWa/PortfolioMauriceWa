@@ -16,7 +16,8 @@
     </ul>
 </nav>
 
-<div class="upper-container">
+<section class="upper-container">
+    <div>
     <h1 class="main-title" id="typeText"></h1><span class="cursor">|</span>
     <p class="description">
         Please get in touch to get access to private
@@ -37,37 +38,19 @@
             </form>
         </div>
     </div>
+    </div>
+</section>
 
-</div>
-<!--<section class="top-text">-->
-<!--    <div class="container">-->
-<!--        <h1 class="main-title" id="typeText"></h1><span class="cursor">|</span>-->
-<!--        <p class="description">-->
-<!--            Please get in touch to get access to private-->
-<!--            information. For security reasons they are unavailable here.-->
-<!--        </p>-->
-<!--        <button onclick="document.getElementById('contactModel').style.display='block'" class="touch">GET IN TOUCH</button>-->
-<!--        <div id="contactModel" class="model">-->
-<!--            <div class="model-content">-->
-<!--                <span onclick="document.getElementById('contactModel').style.display='none'" class="close">&times;</span>-->
-<!--                <form action="https://formspree.io/f/mleqzkyo" method="POST">-->
-<!--                    <label for="name">Name:</label>-->
-<!--                    <input type="text" id="name" name="name" required>-->
-<!--                    <label for="email">Email:</label>-->
-<!--                    <input type="email" id="email" name="_replyto" required>-->
-<!--                    <label for="message">Message:</label>-->
-<!--                    <textarea id="message" name="message" required></textarea>-->
-<!--                    <button type="submit" class="touch">Send Message</button>-->
-<!--                </form>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
 <div class="background-container">
-    <a href="http://mauricewa.com" target="_blank" class="image-link" id="button1"></a>
-    <a href="http://mauricewa.com" target="_blank" class="image-link" id="button2"></a>
-    <a href="http://mauricewa.com" target="_blank" class="image-link" id="button3"></a>
+    <a href="../Resources/Blank.pdf" target="_blank" class="image-link" id="button1"></a>
+    <div class="image-link bio-container" id="button2" onmouseover="startBioTyping()">
+        <div class="bio-box">
+            <h2>Bio</h2>
+            <p>I am a <span id="bioText"></span><span class="cursor2">|</span></p>
+        </div>
 
+    </div>
+    <a href="https://www.instagram.com/mauricewaai/" target="_blank" class="image-link" id="button3"></a>
 </div>
 
 <footer>

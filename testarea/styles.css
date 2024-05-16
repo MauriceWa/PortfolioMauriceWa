@@ -379,29 +379,29 @@ footer {
         right: 16%;
     }
 }
-    @media (max-width: 468px) {
-        .image-link {
-            position: absolute;
-            width: 19%;
-            height: 24%;
-            display: block;
-            transition: all 0.3s ease;
-        }
-
-        #button1 {
-            top: 29%;
-            left: -5%;
-        }
-
-        #button2 {
-            top: 28%;
-            left: 47%;
-            transform: translateX(-50%);
-        }
-
-        #button3 {
-            top: 29%;
-            right: -1%;
-        }
+@media (max-width: 468px) {
+    .image-link {
+        position: absolute;
+        width: 19%;
+        height: 24%;
+        display: block;
+        transition: all 0.3s ease;
     }
+
+    #button1 {
+        top: 29%;
+        left: -5%;
+    }
+
+    #button2 {
+        top: 28%;
+        left: 47%;
+        transform: translateX(-50%);
+    }
+
+    #button3 {
+        top: 29%;
+        right: -1%;
+    }
+}
 

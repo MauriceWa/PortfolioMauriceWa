@@ -197,7 +197,7 @@ body {
     position: relative;
     width: 100%;
     height: 40vh;
-    background-image: url('../Resources/upper.png');
+    background-image: url('Resources/upper.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -210,7 +210,7 @@ body {
     position: relative;
     width: 100%;
     height: 60vh;
-    background-image: url('../Resources/lower2.png');
+    background-image: url('Resources/lower2.png');
     background-size: cover;
     background-position: center;
     display: flex;

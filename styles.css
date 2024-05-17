@@ -200,7 +200,7 @@ body {
     position: relative;
     width: 100%;
     height: 75vh;
-    background-image: url('../Resources/upper.png');
+    background-image: url('Resources/upper.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -213,7 +213,7 @@ body {
     position: relative;
     width: 100%;
     height: 60vh;
-    background-image: url('../Resources/lower2.png');
+    background-image: url('Resources/lower2.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -223,7 +223,6 @@ body {
 
 .image-link {
     position: absolute;
-    background: black;
     width: 12%;
     height: 50%;
     cursor: pointer;
@@ -260,7 +259,7 @@ footer {
         position: relative;
         width: 100%;
         height: 60vh;
-        background-image: url('../Resources/upper.png');
+        background-image: url('Resources/upper.png');
         background-size: cover;
         background-position: center;
         display: flex;
@@ -271,7 +270,7 @@ footer {
         position: relative;
         width: 100%;
         height: 50vh;
-        background-image: url('../Resources/lower2.png');
+        background-image: url('Resources/lower2.png');
         background-size: cover;
         background-position: center;
         display: flex;
@@ -282,7 +281,6 @@ footer {
     .image-link {
         position: absolute;
         width: 12%;
-        background: black;
 
         height: 30%;
         display: block;
@@ -309,7 +307,6 @@ footer {
 @media (max-width: 1024px) {
     .image-link {
         position: absolute;
-        background: black;
 
         width: 12%;
         height: 20%;
@@ -338,7 +335,6 @@ footer {
     .image-link {
         position: absolute;
         width: 13%;
-        background: black;
 
         height: 20%;
         display: block;
@@ -367,7 +363,6 @@ footer {
     .image-link {
         position: absolute;
         width: 14%;
-        background: black;
 
         height: 26%;
         display: block;
@@ -395,7 +390,6 @@ footer {
     .image-link {
         position: absolute;
         width: 14%;
-        background: black;
 
         height: 26%;
         display: block;
@@ -424,7 +418,7 @@ footer {
         position: relative;
         width: 100%;
         height: 40vh;
-        background-image: url('../Resources/lower2.png');
+        background-image: url('Resources/lower2.png');
         background-size: cover;
         background-position: center;
         display: flex;
@@ -435,8 +429,6 @@ footer {
     .image-link {
         position: absolute;
         width: 19%;
-        background: black;
-
         height: 24%;
         display: block;
         transition: all 0.3s ease;
@@ -444,18 +436,18 @@ footer {
 
     #button1 {
         top: 29%;
-        left: -5%;
+        left: 15%;
     }
 
     #button2 {
-        top: 28%;
+        top: 29%;
         left: 47%;
         transform: translateX(-50%);
     }
 
     #button3 {
         top: 29%;
-        right: -1%;
+        right: 20%;
     }
 }
 

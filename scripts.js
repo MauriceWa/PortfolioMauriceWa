@@ -12,11 +12,11 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
 
     const bioKeywords = [
-        "Hard Worker.",
-        "Coach.",
-        "Fitness enthusiast.",
-        "Boxer.",
-        "Software Developer."
+        "Dedicated professional.",
+        "Mentor.",
+        "Health and fitness advocate.",
+        "Boxing enthusiast.",
+        "Software developer."
     ];
 
     let currentPhrase = 0;

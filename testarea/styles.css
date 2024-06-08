@@ -231,18 +231,18 @@ body {
 }
 
 
-#button1 {
+#PdfButton {
     top: 4%;
     left: 20%;
 }
 
-#button2 {
+#GitHubButton {
     top: 4%;
     left: 48%;
     transform: translateX(-50%);
 }
 
-#button3 {
+#InstagramButton {
     top: 4%;
     right: 25%;
 }
@@ -289,18 +289,18 @@ footer {
         transition: all 0.3s ease;
     }
 
-    #button1 {
+    #PdfButton {
         top: 22%;
         left: 20%;
     }
 
-    #button2 {
+    #GitHubButton {
         top: 23%;
         left: 48%;
         transform: translateX(-50%);
     }
 
-    #button3 {
+    #InstagramButton {
         top: 25%;
         right: 24%;
     }
@@ -317,18 +317,18 @@ footer {
         transition: all 0.3s ease;
     }
 
-    #button1 {
+    #PdfButton {
         top: 30%;
         left: 21%;
     }
 
-    #button2 {
+    #GitHubButton {
         top: 30%;
         left: 48%;
         transform: translateX(-50%);
     }
 
-    #button3 {
+    #InstagramButton {
         top: 30%;
         right: 25%;
     }
@@ -345,18 +345,18 @@ footer {
         transition: all 0.3s ease;
     }
 
-    #button1 {
+    #PdfButton {
         top: 30%;
         left: 18%;
     }
 
-    #button2 {
+    #GitHubButton {
         top: 30%;
         left: 48%;
         transform: translateX(-50%);
     }
 
-    #button3 {
+    #InstagramButton {
         top: 32%;
         right: 22%;
     }
@@ -374,18 +374,18 @@ footer {
         transition: all 0.3s ease;
     }
 
-    #button1 {
+    #PdfButton {
         top: 26%;
         left: 11%;
     }
 
-    #button2 {
+    #GitHubButton {
         top: 27%;
         left: 48%;
         transform: translateX(-50%);
     }
 
-    #button3 {
+    #InstagramButton {
         top: 27%;
         right: 16%;
     }
@@ -402,18 +402,18 @@ footer {
         transition: all 0.3s ease;
     }
 
-    #button1 {
+    #PdfButton {
         top: 26%;
         left: 11%;
     }
 
-    #button2 {
+    #GitHubButton {
         top: 27%;
         left: 48%;
         transform: translateX(-50%);
     }
 
-    #button3 {
+    #InstagramButton {
         top: 27%;
         right: 16%;
     }
@@ -442,18 +442,18 @@ footer {
         transition: all 0.3s ease;
     }
 
-    #button1 {
+    #PdfButton {
         top: 29%;
         left: -5%;
     }
 
-    #button2 {
+    #GitHubButton {
         top: 28%;
         left: 47%;
         transform: translateX(-50%);
     }
 
-    #button3 {
+    #InstagramButton {
         top: 29%;
         right: -1%;
     }

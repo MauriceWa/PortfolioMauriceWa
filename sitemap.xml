@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+        xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9
+            https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <url>
+    <loc>https://mauricewa.com/</loc>
+    <lastmod>2024-06-11T19:57:35+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://mauricewa.com/projects/project1.html</loc>
+    <lastmod>2024-06-11T19:57:35+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://mauricewa.com/projects/project2.html</loc>
+    <lastmod>2024-06-11T19:57:35+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://mauricewa.com/contact</loc>
+    <lastmod>2024-06-11T19:57:35+00:00</lastmod>
+  </url>
+
+</urlset>

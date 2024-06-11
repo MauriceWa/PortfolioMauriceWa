@@ -1,14 +1,7 @@
 User-agent: *
-Disallow: /admin/
-Disallow: /login/
-Disallow: /private/
-Disallow: /temporary/
-Disallow: /contact-form/
-Disallow: /scripts/
-Disallow: /styles/
 Disallow: /Resources/
-Disallow: /model/
-Allow: /images/
-Allow: /projects/
+Disallow: /testarea/
+Disallow: /scripts.js
+Disallow: /styles.css
 
-Sitemap: https://www.MauriceWa.com/sitemap.xml
+Sitemap: https://mauricewa.com/sitemap.xml

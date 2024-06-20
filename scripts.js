@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentBioKeyword = 0;
     let currentBioCharacter = 0;
 
-    const typeText = document.getElementById('typeText');
+    const typeText = document.getElementById('ContactFormPersonal');
     const bioText = document.getElementById('bioText');
     const cursor = document.querySelector('.cursor');
     let bioTypingStarted = false;
